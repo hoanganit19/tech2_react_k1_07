@@ -1,0 +1,12 @@
+Hook useEffect
+
+1. Tham số thứ 2 là 1 mảng rỗng => Chỉ chạy 1 lần khi component render
+
+2. Tham số thứ 2 là 1 mảng có giá trị => Chỉ 2 lần: 
+
++ Khi component render
++ Sau khi cập nhật state (state được khai báo vào mảng của tham số thứ 2)
+
+3. Không có tham số thứ 2 => componentDidUpdate 
+
+4. Không có tham số thứ 2 và có return 1 function => umount
