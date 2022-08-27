@@ -16,6 +16,7 @@ export default function ToDo() {
     const test = 1;
 
     //componentDidMount()
+
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/todos')
         .then(response => response.json())
