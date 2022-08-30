@@ -11,12 +11,14 @@ import About from './components/About';
 import Counter2 from './components/Counter2';
 import FormReducer from './reducer/FormReducer';
 import CounterReducer from './reducer/CounterReducer';
+import Validation from './reducer/Validation';
 
 function App() {
   return (
       <>
         {/* <FormReducer /> */}
-        <CounterReducer start={1} step={2}/>
+        {/* <CounterReducer start={1} step={2}/> */}
+        <Validation />
       </>
   );
 }
