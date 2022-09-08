@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 //import Counter from './components/Counter';
-import Form from './components/Form';
+//import Form from './components/Form';
 import ToDo from './components/ToDo';
 import Posts from './components/Posts';
 import Theme from './components/Theme';
@@ -17,6 +17,8 @@ import Ref02 from './ref/Ref02';
 import Counter from './memo/Counter';
 import Products from './memo/Products';
 import Contact from './callback/Contact';
+import Form from './hook18/Form';
+import SearchStudent from './hook18/SearchStudent';
 
 function App() {
   return (
@@ -25,7 +27,8 @@ function App() {
         {/* <CounterReducer start={1} step={2}/> */}
         {/* <Validation /> */}
         {/* <Counter /> */}
-        <Contact />
+        <SearchStudent />
+        
       </>
   );
 }
