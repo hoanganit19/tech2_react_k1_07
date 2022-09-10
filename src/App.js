@@ -15,10 +15,13 @@ import Validation from './reducer/Validation';
 import Ref01 from './ref/Ref01';
 import Ref02 from './ref/Ref02';
 import Counter from './memo/Counter';
-import Products from './memo/Products';
+//import Products from './memo/Products';
 import Contact from './callback/Contact';
 import Form from './hook18/Form';
 import SearchStudent from './hook18/SearchStudent';
+import Products from './components/Products';
+import Clock from './components/Clock';
+import SearchProducts from './components/SearchProducts';
 
 function App() {
   return (
@@ -27,8 +30,9 @@ function App() {
         {/* <CounterReducer start={1} step={2}/> */}
         {/* <Validation /> */}
         {/* <Counter /> */}
-        <SearchStudent />
-        
+        {/* <SearchStudent /> */}
+        {/* <Products /> */}
+        <SearchProducts />
       </>
   );
 }

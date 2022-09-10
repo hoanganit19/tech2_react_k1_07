@@ -1,5 +1,6 @@
 import React, {useState, useTransition} from 'react'
 import Student from './Student'
+import useMagicColor from '../hooks/useMagicColor';
 
 export default function SearchStudent() {
 
@@ -16,13 +17,19 @@ export default function SearchStudent() {
         });
        
     }
+
+    const color = useMagicColor({});
+
   return (
-    <>
-        <input onChange={handleSearch} type={'search'} name={'keyword'} placeholder={'Từ khoá...'} />
+    <React.Fragment>
+      <div style={{background: color}}>
+      <input onChange={handleSearch} type={'search'} name={'keyword'} placeholder={'Từ khoá...'} />
         <hr/>
         <h2>Danh sách sinh viên</h2>
         {isPending?<p>Đang tải...</p>:<Student keyword={keyword}/>}
         
-    </>
+      </div>
+       
+    </React.Fragment>
   )
 }
