@@ -22,6 +22,7 @@ import SearchStudent from './hook18/SearchStudent';
 import Products from './components/Products';
 import Clock from './components/Clock';
 import SearchProducts from './components/SearchProducts';
+import Login from './auth/Login';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
         {/* <Counter /> */}
         {/* <SearchStudent /> */}
         {/* <Products /> */}
-        <SearchProducts />
+        {/* <SearchProducts /> */}
+        <Login />
       </>
   );
 }
