@@ -11,6 +11,18 @@
       "password": "$2a$10$Ollsfqc7MpMAJacM4cv9R.koIa7x/ORs8bTkfCYmN19VujmqiFpAi",
       "name": "Hoàng An",
       "id": 2
+    },
+    {
+      "email": "nguyenvantuan@gmail.com",
+      "password": "$2a$10$exiOi9VFts9mMMx3yO8sO.VzMZZM1.K4uKRsc3jCc1IzZLAsnqtVS",
+      "name": "Nguyễn Văn Tuân",
+      "id": 3
+    },
+    {
+      "email": "toilaan@gmail.com",
+      "password": "$2a$10$xayntpmLxgy1EI/5/SqhpuUdo/aclOIXj4bb4zcUqIEQs69HCbzJa",
+      "name": "Hoàng An Unicode",
+      "id": 4
     }
   ],
   "products": [
@@ -18,12 +30,10 @@
       "id": 1,
       "name": "Product 1"
     },
-
     {
       "id": 2,
       "name": "Product 1"
     },
-
     {
       "id": 3,
       "name": "Product 1"
