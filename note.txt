@@ -1,0 +1,3 @@
+accessToken => Token sử dụng để lấy tài nguyên API => Expire = 1 giờ
+
+refreshToken => Token sử dụng để cấp lại accessToken => Expire = 1 tuần

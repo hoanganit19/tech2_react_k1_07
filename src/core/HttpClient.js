@@ -3,11 +3,23 @@ import { Container } from "react-bootstrap";
 class HttpClient{
 
     //callApi
-    callApi = async (url, token, method, body=null) => {
-     
-        const headers = {
-            'Authorization': 'Bearer '+token
+    callApi = async (url, token, method, body=null, typeApi='login') => {
+        
+        let headers;
+
+        if (token!==null && token!==undefined){
+            if (typeApi==='login'){
+                headers = {
+                    'Authorization': 'Bearer '+token
+                }
+            }else{
+                headers = {
+                    'X-XSRF-TOKEN': token
+                }
+            }
+           
         }
+        
 
         const options = {
             method: method,
@@ -33,8 +45,8 @@ class HttpClient{
     }
 
     //get
-    get = (url, token) => {
-        const result = this.callApi(url, token, 'GET');
+    get = (url, token, type='login') => {
+        const result = this.callApi(url, token, 'GET', null, type);
     
         return result;
     }
@@ -72,6 +84,12 @@ class HttpClient{
     //delete
     delete = (url, token) => {
         const result = this.callApi(url, token, 'DELETE');
+        return result;
+    }
+
+    //create spa token
+    csrfToken = (url) => {
+        const result = this.callApi(url, null, 'GET');
         return result;
     }
 

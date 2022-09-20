@@ -23,6 +23,7 @@ import Products from './components/Products';
 import Clock from './components/Clock';
 import SearchProducts from './components/SearchProducts';
 import Login from './auth/Login';
+import ProductApi from './api/ProductApi';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
         {/* <SearchStudent /> */}
         {/* <Products /> */}
         {/* <SearchProducts /> */}
-        <Login />
+        <ProductApi />
       </>
   );
 }
